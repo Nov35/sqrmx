@@ -59,10 +59,7 @@ int main()
 #ifdef PRINT
     std::cout << x;
 #endif
-    
-    int unInitVar;
-    for(int i = 0; i < 10; i++) //Example of incorrect code that can be detected
-        unInitVar += i;         //with Valgrind, but not with compiler
+
 }
 
 void print_arr(int *arr, int s)
