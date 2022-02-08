@@ -1,0 +1,6 @@
+Column summation has took 0.005180 seconds.
+Row summation has took 0.003551 seconds.
+Transposition has took 0.004796 seconds.
+Addition has took 0.003770 seconds.
+Multiplication has took 4.074432 seconds.
+Substraction has took 0.002434 seconds.

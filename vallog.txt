@@ -1,0 +1,23 @@
+==85550== Memcheck, a memory error detector
+==85550== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==85550== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==85550== Command: ./arr
+==85550== 
+==85550== 
+==85550== HEAP SUMMARY:
+==85550==     in use at exit: 4,096 bytes in 1 blocks
+==85550==   total heap usage: 8 allocs, 7 frees, 16,862,208 bytes allocated
+==85550== 
+==85550== 4,096 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==85550==    at 0x48402F3: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==85550==    by 0x109981: SqrMx::col_sum() (in /home/tom/Learn/2dimarr/arr)
+==85550==    by 0x10924E: main (main.cpp:12)
+==85550== 
+==85550== LEAK SUMMARY:
+==85550==    definitely lost: 4,096 bytes in 1 blocks
+==85550==    indirectly lost: 0 bytes in 0 blocks
+==85550==      possibly lost: 0 bytes in 0 blocks
+==85550==    still reachable: 0 bytes in 0 blocks
+==85550==         suppressed: 0 bytes in 0 blocks
+==85550== 
+==85550== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
