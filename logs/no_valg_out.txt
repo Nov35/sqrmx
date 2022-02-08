@@ -1,6 +1,7 @@
-Column summation has took 0.005180 seconds.
-Row summation has took 0.003551 seconds.
-Transposition has took 0.004796 seconds.
-Addition has took 0.003770 seconds.
-Multiplication has took 4.074432 seconds.
-Substraction has took 0.002434 seconds.
+Column summation has took 0.010096 seconds.
+Row summation has took 0.006793 seconds.
+Transposition has took 0.006249 seconds.
+Addition has took 0.002610 seconds.
+Multiplication has took 4.791396 seconds.
+Multiplication with overloaded array acces operator has took 9.480397 seconds.
+Substraction has took 0.002814 seconds.

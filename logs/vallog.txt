@@ -1,23 +1,28 @@
-==85550== Memcheck, a memory error detector
-==85550== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==85550== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==85550== Command: ./arr
-==85550== 
-==85550== 
-==85550== HEAP SUMMARY:
-==85550==     in use at exit: 4,096 bytes in 1 blocks
-==85550==   total heap usage: 8 allocs, 7 frees, 16,862,208 bytes allocated
-==85550== 
-==85550== 4,096 bytes in 1 blocks are definitely lost in loss record 1 of 1
-==85550==    at 0x48402F3: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==85550==    by 0x109981: SqrMx::col_sum() (in /home/tom/Learn/2dimarr/arr)
-==85550==    by 0x10924E: main (main.cpp:12)
-==85550== 
-==85550== LEAK SUMMARY:
-==85550==    definitely lost: 4,096 bytes in 1 blocks
-==85550==    indirectly lost: 0 bytes in 0 blocks
-==85550==      possibly lost: 0 bytes in 0 blocks
-==85550==    still reachable: 0 bytes in 0 blocks
-==85550==         suppressed: 0 bytes in 0 blocks
-==85550== 
-==85550== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==16614== Memcheck, a memory error detector
+==16614== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==16614== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==16614== Command: ./arr
+==16614== 
+==16614== 
+==16614== HEAP SUMMARY:
+==16614==     in use at exit: 8,192 bytes in 2 blocks
+==16614==   total heap usage: 9 allocs, 7 frees, 21,056,512 bytes allocated
+==16614== 
+==16614== 4,096 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==16614==    at 0x48402F3: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16614==    by 0x109B19: SqrMx::col_sum() (in /home/tom/Learn/2dimarr/arr)
+==16614==    by 0x10928F: main (main.cpp:18)
+==16614== 
+==16614== 4,096 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==16614==    at 0x48402F3: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16614==    by 0x109C19: SqrMx::row_sum() (in /home/tom/Learn/2dimarr/arr)
+==16614==    by 0x1092FA: main (main.cpp:24)
+==16614== 
+==16614== LEAK SUMMARY:
+==16614==    definitely lost: 8,192 bytes in 2 blocks
+==16614==    indirectly lost: 0 bytes in 0 blocks
+==16614==      possibly lost: 0 bytes in 0 blocks
+==16614==    still reachable: 0 bytes in 0 blocks
+==16614==         suppressed: 0 bytes in 0 blocks
+==16614== 
+==16614== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
