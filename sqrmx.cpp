@@ -14,10 +14,10 @@ SqrMx::SqrMx(int n) : m_arr_s(n)
 int* SqrMx::col_sum()
 {
     int* res = new int[m_arr_s]; //This pointer will not be freed
-    for(int i = 0; i < m_arr_s * m_arr_s; i += m_arr_s){
-        res[i/m_arr_s] = 0;
+    for(int i = 0; i < m_arr_s; i ++){
+        res[i] = 0;
         for(int j = 0; j < m_arr_s; j++)
-            res[i/m_arr_s] += m_arr[i + j];
+            res[i] += m_arr[i*m_arr_s + j];
     }
     return res;
 }
@@ -27,8 +27,8 @@ int* SqrMx::row_sum()
     int* res = new int[m_arr_s]; //This pointer will not be freed
     for(int i = 0; i < m_arr_s; i++){
         res[i] = 0;
-        for(int j = 0; j < m_arr_s * m_arr_s; j+=m_arr_s){
-            res[i] += m_arr[i + j];
+        for(int j = 0; j < m_arr_s; j++){
+            res[i] += m_arr[i + j*m_arr_s];
         }
     }
     return res;
