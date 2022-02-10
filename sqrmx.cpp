@@ -7,8 +7,8 @@
 SqrMx::SqrMx(int n) : m_arr_s(n)
 {
     m_arr = new int [m_arr_s * m_arr_s];
-    for(int i = 0; i < m_arr_s * m_arr_s; i++)
-        m_arr[i] = rand();
+    for(int *pt = m_arr; pt < m_arr + m_arr_s * m_arr_s; ++pt)
+        *pt = rand();
 }
 
 int* SqrMx::col_sum()
